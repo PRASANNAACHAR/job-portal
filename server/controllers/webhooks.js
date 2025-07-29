@@ -10,7 +10,7 @@ import User from "../models/User.js";
     const whook = new Webhook (process.env.CLERK_WEBHOOK_SECRET)
 
     // verfiying header
-    await whook.verify(JSON.stringify(req, res),{
+    await whook.verify(JSON.stringify(req.body),{
         "svix-id": req.headers["svix-id"],
         "svix-timestamp": req.headers["svix-timestamp"],
         "svix-signature": req.headers["svix-signature"]
@@ -35,7 +35,7 @@ import User from "../models/User.js";
         }
 
           case 'user.updated':{
-               const  userData = {
+            const  userData = {
             email:data.email_addresses[0].email_address,
             name:data.first_name + " " + data.last_name,
             image: data.image_url,
