@@ -11,7 +11,14 @@ lam@demo122.com
  create a seprate account new your choice
 
 
- <div className='flex items-center gap-2'>
-          <img className='h-8 w-8 rounded-full' src={job.companyId?.image} alt="Company Logo" />
-          <p className="text-sm font-medium text-gray-700">{job.companyId?.name}</p> {/* ✅ Company Name */}
-        </div>
+
+
+
+changes made  frontent ctaegory and location
+utils folder create 2 files created
+job listing changes  ctaegory and location (dummy data deleted)
+add job file chnages ctaegory and location 
+ 
+
+
+    
