@@ -53,6 +53,7 @@ const Applications = () => {
    if (user) {
     fetchUserApplications()
    }
+   
   },[user])
 
   return (

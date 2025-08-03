@@ -9,3 +9,9 @@ recuiterlogin email id
 lam@demo122.com
 123456789
  create a seprate account new your choice
+
+
+ <div className='flex items-center gap-2'>
+          <img className='h-8 w-8 rounded-full' src={job.companyId?.image} alt="Company Logo" />
+          <p className="text-sm font-medium text-gray-700">{job.companyId?.name}</p> {/* ✅ Company Name */}
+        </div>

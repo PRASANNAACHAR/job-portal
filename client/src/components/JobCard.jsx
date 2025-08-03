@@ -8,9 +8,11 @@ const jobCard = ({ job }) => {
 
   return (
     <div className='border p-6 shadow rounded'>
-        <div className='flex justify-between items-center'>
-            <img className='h-8' src={job.companyId.image} alt="" />
-        </div>
+        <div className='flex items-center gap-2'>
+    <img className='h-8 w-8 rounded-full' src={job.companyId?.image} alt="Logo" />
+    <p className="text-sm font-medium text-gray-700">{job.companyId?.name}</p> 
+  </div>
+
         <h4 className='font-medium text-xl mt-2'>{job.title}</h4>
         <div className='flex items-center gap-3 mt-2 text-xs'>
             <span className='bg-blue-50 border border-blue-200 px-4 py-1.5 rounded '>{job.location}</span> 
